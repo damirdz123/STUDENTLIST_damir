@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Studentlist 1991</title>
+</head>
+
+<body>
+    <h1>Studentlist 1991</h1>
+
+    <section id="buttons">
+
+        <div id="sorting">
+            Sort by:
+            <button id="sort_first">First name</button>
+            <button id="sort_last">Last name</button>
+            <button id="sort_house">House</button>
+        </div>
+
+        <div id="filters">
+            Filter:
+            <a href="#" data-filter="all">All</a>
+            <a href="#" data-filter="Gryffindor">Gryffindor</a>
+            <a href="#" data-filter="Hufflepuff">Hufflepuff</a>
+            <a href="#" data-filter="Ravenclaw">Ravenclaw</a>
+            <a href="#" data-filter="Slytherin">Slytherin</a>
+        </div>
+
+    </section>
+
+    <table id="studentlist">
+
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>House</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+
+    <template id="student_template">
+        <tr>
+            <td data-firstname>First-name</td>
+            <td data-lastname>Last-name</td>
+            <td data-house>House</td>
+            <td><button>Delete</button></td>
+        </tr>
+    </template>
+
+    <script src="script.js"></script>
+    <script src="frontend.js"></script>
+</body>
+
+</html>
